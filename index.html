@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css"/>
+        <title>worlds coolest survey</title>
+    </head>
+    <body>
+        <form id = "SurveyForm"action="Survey">
+            <h2>Gnome opinion Survey</h2>
+                <!--name form-->
+                <label for="UserName">Enter your name:</label>
+                <input type="text" name="usersName" id="Username">
+                <!--email form-->
+                <label for= "UserEmail">Email Adress:</label>
+                <input type="email" name="emailAdress" id="UserEmail">
+                <!--radio button for choice based inputs-->
+                <fieldset>
+                    <legend>Which Gnome sounds Coolest</legend>
+                
+                    <input type="radio" id="GnomeChomsky" name="Gnome" value="Gnome1" />
+                    <label for="GnomeChomsky">Gnome Chomsky</label><br />
+                
+                    <input type="radio" id="SherlockGnomes" name="Gnome" value="Gnome2" />
+                    <label for="SherlockGnomes">Sherlock Gnomes</label><br />
+                
+                    <input type="radio" id="PostMagnome" name="Gnome" value="Gnome3" />
+                    <label for="PostMagnome">Post MaGnome</label>
+                </fieldset>
+
+                <label for="gnome-opinion">How do Gnomes make you feel Please be honest:</label>
+                <select name="GnomeOpinion" id="gnome-opinion" required>
+                        <option value="">Please Make a Selection</option>
+                        <option value="Anger">Angry</option>
+                        <option value="Disgust">Disgusted</option>
+                        <option value="Rage">Enraged</option>
+                        <option value="Fear">Fearful</option>
+                        <option value="happy">Happy</option>
+                </select>
+
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
