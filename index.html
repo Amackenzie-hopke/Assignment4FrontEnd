@@ -15,6 +15,10 @@
                 <!--email form-->
                 <label for= "UserEmail">Email Adress:</label>
                 <input type="email" name="emailAdress" id="UserEmail">
+
+                <label for="phoneNumber">Enter your phone number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="204-987-1234" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}">
+                  
                 <!--radio button for choice based inputs-->
                 <fieldset>
                     <legend>Which Gnome sounds Coolest</legend>
@@ -28,7 +32,7 @@
                     <input type="radio" id="PostMagnome" name="Gnome" value="Gnome3" />
                     <label for="PostMagnome">Post MaGnome</label>
                 </fieldset>
-
+                <fieldset>
                 <label for="gnome-opinion">How do Gnomes make you feel Please be honest:</label>
                 <select name="GnomeOpinion" id="gnome-opinion" required>
                         <option value="">Please Make a Selection</option>
@@ -38,7 +42,12 @@
                         <option value="Fear">Fearful</option>
                         <option value="happy">Happy</option>
                 </select>
+                </fieldset>
+                <label for="GnomeName">What Would you name a Gnome</label>
+                <input type="text" name="givenName" id="GnomeName"/>
 
+                <label for="GnomeThoughts">Please Share your thoughts on gnomes in 500 or less characters:</label>
+                <textarea name="GnomeThoughts" id="GnomeThoughts"></textarea>   
         </form>
         <script src="script.js"></script>
     </body>
